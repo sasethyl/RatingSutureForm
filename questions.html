@@ -1,7 +1,7 @@
 <!-- questions.html (fragment only, no html/head/body tags) -->
 
 <!-- question 1 -->
-<p>1. Suture Offset from previous needle exit *</p>
+<p>1. Offset between two sutures *</p>
 <label><input type="radio" name="sutureOffset" value="Good Offset -suture begins behind last needle exit" required> Good Offset -suture begins behind last needle exit</label><br/>
 <label><input type="radio" name="sutureOffset" value="Zero Offset - suture begins opposite to needle exit"> Zero Offset - suture begins opposite to needle exit</label><br/>
 <label><input type="radio" name="sutureOffset" value="Negative Offset -suture begins ahead of last needle exit"> Negative Offset -suture begins ahead of last needle exit</label>
@@ -10,37 +10,38 @@
 <!-- question 2 -->
 <p>2. Suture size (length) *</p>
 <label><input type="radio" name="sutureSize" value="Standard"> Standard</label><br/>
-<label><input type="radio" name="sutureSize" value="Large"> Large</label>
+<label><input type="radio" name="sutureSize" value="Large (long)"> Large (long)</label>
 <br/><br/>
 
-<p>3. Suture direction *</p>
-<label><input type="radio" name="sutureDirection" value="Parallel" required> Parallel</label><br/>
-<label><input type="radio" name="sutureDirection" value="Not Parallel"> Not Parallel</label><br/>
+<p>3. Suture Depth *</p>
+<label><input type="radio" name="sutureDepth" value="Too Shallow" required> Too Shallow</label><br/>
+<label><input type="radio" name="sutureDepth" value="Standard"> Standard</label><br/>
+<label><input type="radio" name="sutureDepth" value="Too Deep" required> Too Deep</label><br/>
 <br/><br/>
 
-<p>4. Tension: Is there tension placed on the tissue? *</p>
+<p>4. Suture direction (one side of laceration - second side of laceration)*</p>
+<label><input type="radio" name="sutureDirection" value="Parallel - Parallel" required> Parallel - Parallel</label><br/>
+<label><input type="radio" name="sutureDirection" value="Parallel - Not Parallel"> Parallel - Not Parallel</label><br/>
+<label><input type="radio" name="sutureDirection" value="Not Parallel - Parallel" required> Not Parallel - Parallel</label><br/>
+<label><input type="radio" name="sutureDirection" value="Not Parallel - Not Parallel"> Not Parallel - Not Parallel</label><br/>
+<br/><br/>
+
+<p>5. Tension: Is there tension placed on the tissue? *</p>
 <label><input type="radio" name="tension" value="Normal tissue tension" required> Normal tissue tension</label><br/>
-<label><input type="radio" name="tension" value="Excessive tissue tension"> Not Excessive tissue tension</label><br/>
+<label><input type="radio" name="tension" value="Excessive tissue tension"> Excessive tissue tension</label><br/>
 <br/><br/>
 
-<p>5. Handling Suture (rating tightness) *</p>
+<p>6. Tightening between sutures *</p>
 <label><input type="radio" name="tightness" value="Not tightening enough" required> Not tightening enough</label><br/>
 <label><input type="radio" name="tightness" value="Standard tightening"> Standard tightening</label><br/>
 <label><input type="radio" name="tightness" value="Excessive tightening"> Excessive tightening</label>
 <br/><br/>
 
-<p>6. Number of Attempts surgeon enters in and out of tissue... *</p>
-<label><input type="radio" name="numAttempts" value="1 (ideal)" required> 1 (ideal)</label><br/>
-<label><input type="radio" name="numAttempts" value="2"> 2</label><br/>
-<label><input type="radio" name="numAttempts" value="3 "> 3 </label><br/>
-<label><input type="radio" name="numAttempts" value="4+"> 4+</label><br/>
-<br/><br/>
-
-<p>7. Needle Positioning - number of times the surgeon grabs the needle (with needle holder) and repositions it using forceps *</p>
-<label><input type="radio" name="repositioning" value="0 attempts - grabs needle with needle holder, directly from the tissue, no repositioning " required> 0 attempts - grabs needle with needle holder (directly from the tissue, no repositioning)</label><br/>
-<label><input type="radio" name="repositioning" value="1 attempt"> 1 attempt</label><br/>
-<label><input type="radio" name="repositioning" value="2 attempts"> 2 attempts</label><br/>
-<label><input type="radio" name="repositioning" value="3+ attempts"> 3+ attempts</label><br/>
+<p>7. Number of Attempts surgeon enters in and out of tissue *</p>
+<label><input type="radio" name="numAttempts" value="2 (entering once on each side - standard)" required> 2 (entering once on each side - standard)</label><br/>
+<label><input type="radio" name="numAttempts" value="3"> 3</label><br/>
+<label><input type="radio" name="numAttempts" value="4 "> 4 </label><br/>
+<label><input type="radio" name="numAttempts" value="5+"> 5+</label><br/>
 <br/><br/>
 
 <label>8. Any Additional Observations <br/>
