@@ -116,12 +116,12 @@
         <th>ParticipantID</th>
         <th>VideoID</th>
         <th>Suture Offset</th>
-        <th>Suture Size</th>
+        <th>Suture Size (length)</th>
+        <th>Suture Depth</th>
         <th>Suture Direction</th>
         <th>Tension</th>
-        <th>Handling Tightness</th>
+        <th>Tightening</th>
         <th>Num Attempts</th>
-        <th>Needle Repositioning</th>
         <th>Additional Observations</th>
       </tr>
     </thead>
@@ -190,11 +190,11 @@
           entry.videoId || "",
           entry.sutureOffset || "",
           entry.sutureSize || "",
+          entry.sutureDepth || "",
           entry.sutureDirection || "",
           entry.tension || "",
           entry.tightness || "",
           entry.numAttempts || "",
-          entry.repositioning || "",
           entry.additionalObservations || ""
         ];
         columns.forEach(c => {
